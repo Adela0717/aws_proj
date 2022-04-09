@@ -1,0 +1,11 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: helloworld.GrabberApp
+      CodeUri: s3://hkbu.e9251017666/f3484f43bf5ac6e5af1b11f0e33de16d
+      Runtime: java8
+    Metadata:
+      SamResourceId: Function
